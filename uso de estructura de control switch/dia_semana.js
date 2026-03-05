@@ -1,10 +1,7 @@
 function obtenerDiaSemana() {
 
-// Pedir dato
 let numero = parseInt(prompt("Ingresa un número del 1 al 7:"));
 
-
-// Determinar día
 let dia;
 
 switch (numero) {
@@ -30,10 +27,8 @@ case 7:
 dia = "Domingo";
 break;
 }
-
-// Mostrar resultado
 console.log("El día correspondiente es:", dia);
-
 }
+
 
 obtenerDiaSemana();
