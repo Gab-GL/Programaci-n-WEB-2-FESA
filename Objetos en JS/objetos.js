@@ -1,6 +1,6 @@
 let alumno = {
     id: 321149170,
-    nombre: "Gabril",
+    nombre: "Gabriel",
     primerApellido: "Gonzalez",
     segundoApellido: "Lopez",
     edad: 20,
