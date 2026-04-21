@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de usuarios desde JSON</title>
+</head>
+<body>
+
+    <h2>Gestor de usuarios desde JSON</h2>
+
+    <!-- Formulario -->
+    <form id="formUsuario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+
+        <button type="submit">Guardar</button>
+    </form>
+
+    <br>
+
+    <!-- Importar JSON -->
+    <input type="file" id="importarJSON" accept=".json">
+
+    <!-- Descargar JSON -->
+    <button id="descargarBtn" type="button">Descargar JSON</button>
+
+    <hr>
+
+    <h3>Usuarios registrados:</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo electrónico</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tablaUsuarios">
+            <!-- contenido dinámico -->
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
